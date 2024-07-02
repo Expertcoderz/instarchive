@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "instarchive"
+version = "1.0.2"
+requires-python = ">=3.12"
+dependencies = [
+	"click >= 8.1.7",
+	"instaloader >= 4.11"
+]
+authors = [
+	{ name="Expertcoderz", email="expertcoderzx@gmail.com"}
+]
+description = "CLI tool for collecting and archiving data from Instagram users with Instaloader."
+readme = "README.md"
+classifiers = [
+	"Development Status :: 5 - Production/Stable",
+	"Environment :: Console",
+	"Intended Audience :: Developers",
+	"Intended Audience :: End Users/Desktop",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent",
+	"Programming Language :: Python :: 3.12",
+	"Programming Language :: Python :: 3 :: Only",
+	"Topic :: Internet",
+	"Topic :: Multimedia :: Graphics"
+]
+keywords = [
+	"instagram",
+	"instagram-scraper",
+	"instagram-client",
+	"instagram-feed",
+	"downloader",
+	"videos",
+	"photos",
+	"pictures",
+	"instagram-user-photos",
+	"instagram-photos",
+	"instagram-metadata",
+	"instagram-downloader",
+	"instagram-stories"
+]
+
+[project.urls]
+Homepage = "https://github.com/Expertcoderz/instarchive"
+Repository = "https://github.com/Expertcoderz/instarchive.git"
+Issues = "https://github.com/Expertcoderz/instarchive/issues"
+
+[project.scripts]
+instarchive = "instarchive:instarchive"
